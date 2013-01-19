@@ -1,0 +1,40 @@
+﻿<!doctype html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<title>The Spaceship Project</title>
+		<link href="css/stylesheet.css" type="text/css" rel="stylesheet"/>
+	</head>
+	<body>
+		<canvas id="mainScreen" width="1120" height="630"></canvas>
+
+		<div id="title"><p style="color: red;text-align:center;">Use <b>WASD</b> to move your spaceship, <b>J!!!!</b> to fire and <b>ESC</b> to pause!</p>
+		<p><u>TO DO:</u>
+			<ul>
+				<li>Bullets-Collision arbeitet nicht zuverlässig (wenn man selber am schiessen ist, werden Treffer von hostileBullets ignoriert</li>
+				<li>Verbesserte Eingabeunterstützung</li>
+				<li>Bessere OO implementierung (DRINGEND!) -> prototyping?</li>
+				<li>stark schwankende "perfomance" -> requestAnimFrame</li>
+				<li>Verschieden Schiffstypen</li>
+				<li>Modifizierbares Waffensystem</li>
+				<li>Moving background (mit Sternen, Planeten usw.)</li>
+				<li>Verschiedene Angrifswellen-Typen? (z.B. ein grosses Schiff mit einem kleinen auf beiden Seiten oder 5 sehr schnell nacheinander spawnende Schiffe...)
+				<li>HUD-item-coding (inkl. Menüs & Lebensanzeige für einzellne Schiffe) -> Ersatz für label-Array</li>
+				<li>Endgegner?</li>
+				<li>Powerups</li>
+			</ul>
+		</p>
+		</div>
+
+        <!--Load all the sctipts-->
+		<script src="js/new/inheritance.js"></script>
+		<script src="js/new/actor.js"></script>
+        <script src="js/new/player.js"></script>
+		<script src="js/new/animation.js"></script>
+        <script src="js/enemy.js"></script>
+        <script src="js/Rectangle.js"></script>
+		<script src="js/bullet.js"></script>
+		<script src="js/label.js"></script>
+        <script src="js/script.js"></script>
+	</body>
+</html>
